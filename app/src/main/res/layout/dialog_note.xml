@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/editNoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título "
+        android:inputType="textCapSentences"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editNoteBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contenido"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

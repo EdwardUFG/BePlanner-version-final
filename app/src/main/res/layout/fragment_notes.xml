@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5E9DC"
+    tools:context=".ui.notes.NotesFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C1B0B4"
+        android:clipToPadding="false"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:backgroundTint="#8B454F"
+        android:text="@string/NoteAdd"
+        android:textColor="#FFFFFF" />
+</FrameLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_title">Aplicacion_organizadora</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="app_name">BePlanner</string>
+    <string name="timer_initial">00:05</string>
+    <string name="start_timer">Iniciar temporizador</string>
+    <string name="pomodoro_title">Método pomodoro</string>
+    <string name="initial_time">05:00</string>
+    <string name="start_button">Iniciar</string>
+    <string name="stop_button">Reiniciar</string>
+    <string name="hint_titulo">Título</string>
+
+    <string name="hint_descripcion">Descripción</string>
+    <string name="editar">Editar recordatorio</string>
+    <string name="eliminar">Eliminar recordatorio</string>
+    <string name="add_reminder_description">Añadir recordatorio</string>
+
+    <string name="add_task_description">Añadir nueva tarea</string>
+
+    <string name="NoteBody">Contenido de la nota</string>
+    <string name="NoteTitle">Título</string>
+    <string name="NoteAdd">Añadir nota</string>
+</resources>

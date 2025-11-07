@@ -1,0 +1,39 @@
+gitignore
+# Archivos generados por el sistema operativo
+*.DS_Store
+Thumbs.db
+
+# Archivos y carpetas del IDE (Android Studio, IntelliJ)
+.idea/
+.gradle/
+local.properties
+*.iml
+
+# Carpetas y archivos de compilación (Build)
+/build/
+/app/build/
+/captures/
+
+# Archivos de la máquina virtual de Dalvik
+*.apk
+*.ap_
+*.aab
+
+# Archivos generados por Google Services
+google-services.json
+
+# Paquetes de Kotlin
+/kotlin/
+
+# Archivos de limpieza de la compilación
+/buildOutputCleanup/
+
+# Registros de fallos y rendimiento de Firebase
+*.crashlytics
+*.firebase
+
+# Archivos de caché
+.kotlin/
+cache.properties
+vcs-1/
+file-system.probe

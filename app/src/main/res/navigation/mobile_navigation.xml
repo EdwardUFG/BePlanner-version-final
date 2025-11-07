@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.aplicacion_organizadora.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_tasks"
+        android:name="com.example.aplicacion_organizadora.ui.tasks.TasksFragment"
+        android:label="Tareas"
+        tools:layout="@layout/fragment_tasks" />
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.example.aplicacion_organizadora.ui.notes.NotesFragment"
+        android:label="Notas"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.aplicacion_organizadora.ui.calendar.CalendarFragment"
+        android:label="Calendario"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.example.aplicacion_organizadora.ui.recordatorios.RecordatoriosFragment"
+        android:label="Recordatorios"
+        tools:layout="@layout/fragment_recordatorios" />
+    <deepLink
+        android:id="@+id/deepLink_recordatorios"
+        app:uri="app-organizador://recordatorios" />
+
+
+    <fragment
+        android:id="@+id/nav_timer"
+        android:name="com.example.aplicacion_organizadora.ui.temporizador.TemporizadorFragment"
+        android:label="Temporizador"
+        tools:layout="@layout/fragment_temporizador" />
+
+
+</navigation>

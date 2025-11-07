@@ -1,0 +1,4 @@
+<resources>
+    <item name="note_title_id" type="id"/>
+    <item name="note_body_id" type="id"/>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_titulo"
+        android:inputType="textCapSentences"
+        android:autofillHints="name" />
+
+    <EditText
+        android:id="@+id/et_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="top"
+        android:hint="@string/hint_descripcion"
+        android:inputType="textMultiLine|textCapSentences"
+        android:minLines="3"
+        android:autofillHints="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btn_seleccionar_fecha"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="Fecha"
+            android:textColor="#8B454F" />
+
+        <Button
+            android:id="@+id/btn_seleccionar_hora"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hora"
+            android:textColor="#8B454F" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_fecha_hora_seleccionada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="No se ha programado una alarma" />
+
+</LinearLayout>

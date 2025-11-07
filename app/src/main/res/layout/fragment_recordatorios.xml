@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recordatorios.RecordatoriosFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recordatorios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C1B0B4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_recordatorio" />
+
+    <Button
+        android:id="@+id/btn_nuevo_recordatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:backgroundTint="#8B454F"
+        android:text="@string/add_reminder_description"
+        android:textColor="#FFFFFF" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

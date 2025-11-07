@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/labelNotas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notas:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/blockNotas"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textNotaTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de nota"/>
+
+            <TextView
+                android:id="@+id/textNotaCuerpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primeras 10 palabras..."/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/labelTareas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tareas:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/blockTareas"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textTareaTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de tarea"/>
+
+            <TextView
+                android:id="@+id/textTareaPrioridad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prioridad: Alta"/>
+        </LinearLayout>
+
+        <!-- Bloque Recordatorios -->
+        <TextView
+            android:id="@+id/labelRecordatorios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recordatorios:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/blockRecordatorios"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@drawable/bg_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textRecordatorioTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Título de recordatorio"/>
+
+            <TextView
+                android:id="@+id/textRecordatorioFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sonará: 03/11/2025 12:15"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
