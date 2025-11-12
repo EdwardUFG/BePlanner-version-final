@@ -40,7 +40,8 @@ public class InicioActivity extends AppCompatActivity {
                 R.id.nav_notes,
                 R.id.nav_calendar,
                 R.id.nav_timer,
-                R.id.nav_notifications
+                R.id.nav_notifications,
+                R.id.nav_user_data
         )
                 .setOpenableLayout(drawer)
                 .build();
@@ -63,4 +64,3 @@ public class InicioActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 }
-

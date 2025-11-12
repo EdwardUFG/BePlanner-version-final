@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- CAMBIO: Se cambió el ScrollView por un LinearLayout general para controlar mejor el espacio -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,7 +8,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- El contenido del calendario que ya tenías -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,13 +41,11 @@
             android:textColor="#FAEFEF" />
     </LinearLayout>
 
-    <!-- Headers de los días de la semana -->
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:columnCount="7">
-        <!-- (No se necesita cambiar nada aquí, los TextViews para DO, LU, MA, etc. están bien) -->
         <TextView android:text="DO" style="@style/CalendarDayHeader"/>
         <TextView android:text="LU" style="@style/CalendarDayHeader"/>
         <TextView android:text="MA" style="@style/CalendarDayHeader"/>
@@ -67,7 +63,6 @@
         android:columnCount="7"
         android:rowCount="6" />
 
-    <!-- NUEVO: Título para la sección de recordatorios -->
     <TextView
         android:id="@+id/recordatorios_del_dia_titulo"
         android:layout_width="wrap_content"
@@ -78,7 +73,6 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <!-- NUEVO: RecyclerView para mostrar la lista de recordatorios -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_recordatorios_dia"
         android:layout_width="match_parent"
@@ -88,7 +82,6 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_recordatorio_simple" />
 
-    <!-- NUEVO: TextView para mostrar cuando no hay recordatorios -->
     <TextView
         android:id="@+id/texto_sin_recordatorios"
         android:layout_width="match_parent"

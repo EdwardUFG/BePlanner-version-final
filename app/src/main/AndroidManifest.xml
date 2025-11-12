@@ -22,6 +22,8 @@
             android:label="@string/title_activity_inicio"
             android:theme="@style/Theme.Aplicacion_organizadora.NoActionBar" />
 
+        <activity android:name=".perfil.RegisterActivity" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -38,6 +40,15 @@
             android:name=".notifications.AlarmReceiver"
             android:enabled="true"
             android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
 
     </application>
 

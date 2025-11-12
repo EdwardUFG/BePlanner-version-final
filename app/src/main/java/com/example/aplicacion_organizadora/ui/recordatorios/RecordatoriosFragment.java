@@ -170,7 +170,6 @@ public class RecordatoriosFragment extends Fragment {
                     } else {
                         recordatorio.titulo = titulo;
                         recordatorio.descripcion = descripcion;
-                        // 3. Usa la misma variable aquí también.
                         recordatorio.fechaHoraAlarma = fechaHoraAlarmaMillis;
                         recordatorio.fechaRecordatorio = fechaFormateada;
                         recordatoriosViewModel.update(recordatorio);

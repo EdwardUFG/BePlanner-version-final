@@ -94,7 +94,7 @@ public class CalendarFragment extends Fragment {
         calendarViewModel.getFechasConRecordatorios().observe(getViewLifecycleOwner(), fechas -> {
             if (fechas != null) {
                 fechasConRecordatorios = fechas;
-                dibujarCalendario(); // Redibuja el calendario cuando las fechas con recordatorios cambian
+                dibujarCalendario();
             }
         });
     }

@@ -44,9 +44,8 @@ public class CalendarViewModel extends AndroidViewModel {
                         repositorioDeRecordatorios.getFechasConRecordatoriosDelMes(mes.format(formateadorMes)),
                         listaDeStrings -> {
                             if (listaDeStrings == null) {
-                                return new HashSet<>(); // Devolver un set vacío si la lista es nula
+                                return new HashSet<>();
                             }
-                            // Usar el formateador explícitamente para asegurar la conversión correcta
                             return new HashSet<>(listaDeStrings.stream()
                                     .map(s -> LocalDate.parse(s, formateador))
                                     .collect(Collectors.toList()));

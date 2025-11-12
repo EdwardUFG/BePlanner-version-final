@@ -1,5 +1,5 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
-    alias(libs.plugins.kotlin.kapt) apply false // Clave para Room
+    alias(libs.plugins.kotlin.kapt) apply false
 }

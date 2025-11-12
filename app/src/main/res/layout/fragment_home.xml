@@ -13,7 +13,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Card de Próximo Recordatorio -->
         <TextView
             style="@style/HomeCardTitle"
             android:layout_width="wrap_content"
@@ -46,7 +45,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Card de Próxima Tarea -->
         <TextView
             style="@style/HomeCardTitle"
             android:layout_width="wrap_content"
@@ -80,7 +78,6 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Card de Última Nota -->
         <TextView
             style="@style/HomeCardTitle"
             android:layout_width="wrap_content"

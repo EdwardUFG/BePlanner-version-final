@@ -53,7 +53,6 @@ public class TasksFragment extends Fragment {
 
         viewModel = new ViewModelProvider(this).get(TaskViewModel.class);
 
-        // ✅ Usamos la query que ordena por estado y prioridad
         viewModel.getAllTasks().observe(getViewLifecycleOwner(), tasks -> {
             adapter.setTasks(tasks);
         });

@@ -30,6 +30,10 @@
             android:id="@+id/nav_timer"
             android:title="Temporizador"
             android:icon="@drawable/ic_temporizador" />
-
+        <item
+            android:id="@+id/nav_user_data"
+            android:title="Mi perfil"
+            android:icon="@drawable/ic_user_data"
+            />
     </group>
 </menu>

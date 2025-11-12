@@ -27,7 +27,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
-        // Referencias a los nuevos TextViews de las tarjetas
         TextView recordatorioTitulo = root.findViewById(R.id.home_recordatorio_titulo);
         TextView recordatorioFecha = root.findViewById(R.id.home_recordatorio_fecha);
         TextView tareaTitulo = root.findViewById(R.id.home_tarea_titulo);
@@ -37,7 +36,6 @@ public class HomeFragment extends Fragment {
 
         homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
-        // Observar y actualizar la tarjeta de recordatorio
         homeViewModel.getNextRecordatorio().observe(getViewLifecycleOwner(), recordatorio -> {
             if (recordatorio != null) {
                 recordatorioTitulo.setText(recordatorio.titulo);
@@ -49,7 +47,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        // Observar y actualizar la tarjeta de tarea
         homeViewModel.getTopTask().observe(getViewLifecycleOwner(), task -> {
             if (task != null) {
                 tareaTitulo.setText(task.title);
@@ -61,7 +58,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        // Observar y actualizar la tarjeta de nota
         homeViewModel.getLatestNote().observe(getViewLifecycleOwner(), note -> {
             if (note != null) {
                 notaTitulo.setText(note.title);

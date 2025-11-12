@@ -44,5 +44,10 @@
         android:label="Temporizador"
         tools:layout="@layout/fragment_temporizador" />
 
+    <fragment
+        android:id="@+id/nav_user_data"
+        android:name="com.example.aplicacion_organizadora.perfil.UserDataFragment"
+        android:label="Mi perfil"
+        tools:layout="@layout/fragment_user_data" />
 
 </navigation>

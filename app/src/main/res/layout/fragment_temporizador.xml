@@ -4,10 +4,10 @@
     android:background="#C1B0B4"
     android:orientation="vertical"
     android:gravity="center"
-    android:paddingTop="0dp"
-    android:paddingBottom="0dp"
     android:paddingStart="24dp"
-    android:paddingEnd="24dp">
+    android:paddingEnd="24dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp">
 
     <TextView
         android:id="@+id/status_display"
@@ -29,23 +29,43 @@
         android:textSize="48sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#8B454F"
-        android:text="@string/start_button"
-        android:textColor="#FFFEFE"
-        android:textStyle="bold" />
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp">
 
-    <Button
-        android:id="@+id/stop_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#8B454F"
-        android:text="@string/stop_button"
-        android:textColor="#FBFBFB"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#8B454F"
+            android:text="@string/start_button"
+            android:textColor="#FFFEFE"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#8B454F"
+            android:text="@string/stop_button"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/select_sound_button"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#8B454F"
+            android:text="Elegir sonido"
+            android:textColor="#FBFBFB"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>
+
